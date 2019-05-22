@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PrawkoAndroid"
+             x:Class="PrawkoAndroid.MainPage">
+
+    <StackLayout x:Name="slay">
+        <Label Text="Kuba zdaje prawko"
+               FontSize="40"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+        <StackLayout x:Name="stackEgzamin" Orientation="Horizontal" Padding="1,1">
+            <BoxView x:Name="egzaminBox" Color="Aqua"/>
+            <StackLayout Orientation="Vertical">
+                <Label x:Name="egzaminLabel" Text="Egzamin" FontSize="25" FontAttributes="Bold"/>
+                <Label x:Name="egzaminPodLabel" Text="Symulacja egzaminu państwowego" FontSize="15" FontAttributes="None"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="1,1">
+            <BoxView Color="SeaGreen"/>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Test" FontSize="25" FontAttributes="Bold"/>
+                <Label Text="Test bez ograniczen czasowych z dodatkowymi informacjami odnośnie pytań" FontSize="15" FontAttributes="None"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="1,1">
+            <BoxView Color="PaleVioletRed"/>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Encyklopedia" FontSize="25" FontAttributes="Bold"/>
+                <Label Text="Przegląd wszystkich pytań egzaminacyjnych" FontSize="15" FontAttributes="None"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

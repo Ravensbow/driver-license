@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrawkoAndroid.PageWynik">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Silver">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="labelZdanie" Text="Zdałeś!" FontSize="40" TextColor="Black"/>
+                <Label x:Name="labelPunktacja" FontSize="40" Text="22/97" HorizontalOptions="EndAndExpand" TextColor="Black"/>
+            </StackLayout>
+            <ScrollView x:Name="scrollOdpowiedzi" Orientation="Vertical" BackgroundColor="Black">
+                
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
+                <Button Text="Menu" HorizontalOptions="Start" BackgroundColor="Silver" BorderColor="Silver" TextColor="Black" FontSize="20"/>
+                <Button Text="Jeszcze raz" HorizontalOptions="EndAndExpand" BackgroundColor="Silver" BorderColor="Silver" TextColor="Black" FontSize="20"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

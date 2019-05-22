@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
+             x:Class="PrawkoAndroid.PageEgzamin">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                <Label x:Name="nrPytLabel" Text="nr. pytania: 2001" HorizontalOptions="Start" FontSize="Medium"/>
+                <Label x:Name="indexLabel" Text="0/32" HorizontalOptions="EndAndExpand" FontSize="Medium"/>
+            </StackLayout>
+            <Label x:Name="labelTresc"
+                   Text="Ładowanie"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   />
+            <Image x:Name="pytanieImage" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Aspect="AspectFill" />
+            <forms:VideoView x:Name="pytanieVideo" AspectMode="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="Fill"/>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Fill">
+                <StackLayout x:Name="stackA" Orientation="Horizontal" Padding="1,1" BackgroundColor="Bisque">
+                    <Label x:Name="labelA" Text="A" TextColor="IndianRed" FontSize="40" FontAttributes="Bold"/>
+                    <Label x:Name="labelOdpA" Text="Ładowanie" FontSize="20" FontAttributes="None" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout x:Name="stackB" Orientation="Horizontal" Padding="1,1" BackgroundColor="Bisque">
+                    <Label x:Name="labelB" Text="B" TextColor="IndianRed" FontSize="40" FontAttributes="Bold"/>
+                    <Label x:Name="labelOdpB" Text="Ładowanie." FontSize="20" FontAttributes="None" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout x:Name="stackC" Orientation="Horizontal" Padding="1,1" BackgroundColor="Bisque">
+                    <Label x:Name="labelC" Text="C" TextColor="IndianRed" FontSize="40" FontAttributes="Bold"/>
+                    <Label x:Name="labelOdpC" Text="Ładowanie." FontSize="20" FontAttributes="None" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">                
+                <Label x:Name="zegarLabel" Text="00:00" VerticalOptions="Start" HorizontalOptions="Start" FontSize="25" FontAttributes="Bold"/>
+                <Button HorizontalOptions="EndAndExpand" VerticalOptions="End" Text="Zatwierć" BackgroundColor="ForestGreen" BorderColor="ForestGreen" TextColor="Black" Clicked="OnZatwierdz"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
